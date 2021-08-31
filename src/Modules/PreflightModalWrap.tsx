@@ -113,7 +113,7 @@ const PreflightModalWrap: React.FC<IPreflightModalWrapProps> = ({
         <li>
           <Typography variant="h5">
             I have read and agree to the&nbsp;
-            <a className={classes.termLink} href="/terms.pdf">
+            <a className={classes.termLink} href="/terms.html">
               Terms and Conditions
             </a>
             .
