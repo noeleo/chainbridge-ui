@@ -44,6 +44,9 @@ const useStyles = makeStyles(({ constants, palette, zIndex }: ITheme) =>
       position: "absolute",
       zIndex: zIndex?.layer4,
     },
+    termLink: {
+      color: "white",
+    },
   })
 );
 
@@ -106,6 +109,15 @@ const PreflightModalTransfer: React.FC<IPreflightModalTransferProps> = ({
         <li>
           <Typography variant="h5">
             The transaction fee may be higher than expected.
+          </Typography>
+        </li>
+        <li>
+          <Typography variant="h5">
+            I have read and agree to the&nbsp;
+            <a className={classes.termLink} href="/terms.pdf">
+              Terms and Conditions
+            </a>
+            .
           </Typography>
         </li>
       </ul>
